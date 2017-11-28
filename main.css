@@ -1,3 +1,4 @@
+/*~~~ reset ~~~ */
 * {
   box-sizing: border-box; }
 
@@ -15,13 +16,22 @@ body {
   cursor: pointer;
   font-size: 1.3em;
   height: 35px;
-  margin: 0 10px;
+  margin: 10px;
   padding: 0 1em;
   text-transform: uppercase; }
+  .btn:hover {
+    color: #00d792;
+    border-color: #00d792; }
 
 .btn-cta {
   background-color: #00d792;
   border-color: #00d792; }
+
+.blurb {
+  font-family: serif;
+  font-size: 1.8em;
+  font-style: italic;
+  margin: 0; }
 
 /*~~~ Header ~~~*/
 nav {
@@ -43,7 +53,7 @@ nav ul {
   font-size: 1.6em; }
 
 .nav-item a:hover {
-  color: green; }
+  color: #00d792; }
 
 /*~~~ Hero ~~~*/
 .hero {
@@ -72,16 +82,11 @@ nav ul {
 
 .hero-title {
   font-family: sans-serif;
-  font-size: 5em;
+  font-size: 7em;
   text-transform: uppercase; }
 
-.hero-blurb {
-  font-family: serif;
-  font-size: 1.6em;
-  font-style: italic; }
-
 .btn-continue {
-  margin: 0; }
+  margin-left: 0; }
 
 .btn-continue:hover {
   color: black;
@@ -99,6 +104,42 @@ nav ul {
 .cta-text {
   font-size: 1.2em; }
 
-/*~~~  ~~~*/
+/*~~~ Intro ~~~*/
+.section-intro {
+  text-align: center; }
+
+.heading {
+  color: #f3f3f3;
+  font-size: 7em;
+  text-transform: uppercase;
+  margin: 50px 0 25px 0; }
+
+.card-wrap {
+  display: flex;
+  justify-content: space-around;
+  width: 65%;
+  margin: 0 auto; }
+
+.card {
+  width: 180px;
+  margin-top: 50px; }
+
+.card-circle {
+  height: 110px;
+  width: 110px;
+  border: 2px solid #f3f3f3;
+  border-radius: 50%;
+  margin: 0 auto; }
+  .card-circle:hover {
+    border-color: #00d792;
+    box-shadow: 0 0 20px -5px #00d792;
+    color: #00d792; }
+
+.card-title {
+  font-size: 1.4em; }
+
+.card-description {
+  font-size: 1.2em;
+  line-height: 1.6em; }
 
 /*# sourceMappingURL=main.css.map */
