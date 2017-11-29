@@ -4,6 +4,7 @@ $secondary-font-stack: serif;
 //colors:
 $primary-color: #00d792;
 $gray: #f3f3f3;
+$offBlack: #333333;
 
 
 
@@ -16,6 +17,8 @@ body {
     padding: 0;
     font-size: 62.5%; //1em = ~10px
     font-family: $font-stack;
+    line-height: 1.6em;
+    color: $offBlack;
 }
 
 .btn {
@@ -112,14 +115,14 @@ nav ul {
 }
 
 .btn-continue:hover {
-    color: black;
-    border-color: black;
+    color: $offBlack;
+    border-color: $offBlack;
 }
 
 
 /*~~~ CTA banner ~~~*/
 .ctaBanner {
-    background-color: black;
+    background-color: $offBlack;
     color: white;
     display: flex;
     height: 100px;
@@ -135,13 +138,15 @@ nav ul {
 /*~~~ Intro ~~~*/
 .section-intro {
     text-align: center;
+    padding: 50px 0;
 }
 
 .heading {
     color: $gray;
     font-size: 7em;
     text-transform: uppercase;
-    margin: 50px 0 25px 0;
+    margin:0 0 25px 0;
+    line-height: 1em;
 }
 
 .card-wrap {
@@ -176,5 +181,66 @@ nav ul {
 
 .card-description {
     font-size: 1.2em;
+}
+
+
+/*~~~ Team ~~~ */
+.section-team {
+    background-color: $gray;
+    padding: 50px 0 50px 0;
+}
+
+.team-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1090px;
+}
+
+.profile-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 530px;
+}
+
+.img-wrap {
+    height: 130px;
+}
+
+.profile-img {
+    height: 100px;
+    width: 100px;
+}
+
+.team-info {
+    background-color: $offBlack;
+    color: white;
+    width: 400px;
+    border-radius: 5px;
+    padding: 15px;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        right: 100%;
+        top: 25px;
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-right: 14px solid $offBlack;
+        border-bottom: 8px solid transparent;
+    }
+}
+
+.team-name {
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.team-description {
+    font-size: 1.2em;
     line-height: 1.6em;
+    margin-top: 5px;
+    margin-bottom: 0;
 }
