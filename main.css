@@ -196,4 +196,25 @@ nav ul {
   margin-top: 5px;
   margin-bottom: 0; }
 
+/*~~~ Work ~~~*/
+.section-work {
+  text-align: center;
+  padding: 50px 0 50px 0; }
+
+.work-wrap {
+  display: flex;
+  flex-direction: horizontal; }
+
+.work-example {
+  height: 250px;
+  width: 33.33%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("mountain.jpeg");
+  background-size: cover; }
+  .work-example:hover {
+    filter: grayscale(1); }
+
 /*# sourceMappingURL=main.css.map */
