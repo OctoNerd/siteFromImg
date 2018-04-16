@@ -112,7 +112,7 @@ nav ul {
   padding: 50px 0; }
 
 .heading {
-  color: #f3f3f3;
+  color: #e9e9e9;
   font-size: 7em;
   text-transform: uppercase;
   margin: 0 0 25px 0;
@@ -131,7 +131,7 @@ nav ul {
 .card-circle {
   height: 110px;
   width: 110px;
-  border: 2px solid #f3f3f3;
+  border: 2px solid #e9e9e9;
   border-radius: 50%;
   margin: 0 auto; }
   .card-circle:hover {
@@ -147,7 +147,7 @@ nav ul {
 
 /*~~~ Team ~~~ */
 .section-team {
-  background-color: #f3f3f3;
+  background-color: #e9e9e9;
   padding: 50px 0 50px 0; }
 
 .team-wrap {
@@ -195,6 +195,48 @@ nav ul {
   line-height: 1.6em;
   margin-top: 5px;
   margin-bottom: 0; }
+
+/*~~~ Tweet Testimonial ~~~*/
+.section-testimonial {
+  height: 250px;
+  background-color: #333333;
+  color: #e9e9e9;
+  font-size: 2em;
+  font-family: serif;
+  font-style: italic;
+  display: flex;
+  align-items: center; }
+
+.tweet-wrap {
+  width: 600px;
+  margin: 0 auto; }
+
+.tweet-bubble {
+  height: 125px;
+  width: 125px;
+  background-color: #00d792;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+  position: relative; }
+  .tweet-bubble:before {
+    content: '';
+    position: absolute;
+    left: 82%;
+    top: 82%;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 14px solid #00d792;
+    border-bottom: 8px solid transparent;
+    transform: rotate(225deg); }
+
+.tweet-text {
+  line-height: 1.5;
+  margin: 0; }
+  .tweet-text .tweet-link {
+    color: #00d792;
+    text-decoration: none; }
 
 /*~~~ Work ~~~*/
 .section-work {
