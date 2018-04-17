@@ -3,6 +3,7 @@ $font-stack: sans-serif;
 $secondary-font-stack: serif;
 //colors:
 $primary-color: #00d792;
+$secondary-color: rgb(21, 170, 221); //rgba(92, 195, 255, 0.65)
 $gray: #e6e6e6;
 $darkGray: #4d4d4d ;
 $offBlack: #333333;
@@ -64,22 +65,26 @@ body {
 header {
     position: fixed;
     z-index: 10;
-}
-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: white;
     height: 75px;
     width: 100%;
     position: fixed;
     top: 0;
-    display: flex;
-    align-items: center;
 }
+
+.logo {
+    margin-left: 50px;
+}
+
 nav ul {
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-evenly;
     width: 500px;
-    float: right;
 }
 
 .nav-item {
@@ -94,16 +99,19 @@ nav ul {
         font-size: 1.5em;
         margin-bottom: 5px;
     }
+
+    &:hover {
+        color: $primary-color;
+        cursor: pointer;
+    }
 }
 
 .nav-item a {
     text-decoration: none;
     font-size: 1.6em;
-    color: black;
+    color: inherit;
 }
-.nav-item a:hover {
-    color: $primary-color;
-}
+
 
 
 
@@ -120,7 +128,7 @@ nav ul {
 }
 .hero::before {
     content: '';
-    background: linear-gradient(45deg, rgba(92, 195, 255, 0.65) 0%, rgba(0, 255, 128, 0.65) 100%), 
+    background: linear-gradient(45deg, rgba(21, 170, 221, 0.65) 0%, rgba(0, 255, 128, 0.65) 100%), 
                 url('mountain.jpeg');
     background-size: cover;
     display: block;
@@ -242,6 +250,13 @@ nav ul {
 .profile-img {
     height: 100px;
     width: 100px;
+}
+
+.social-icons {
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .team-info {
