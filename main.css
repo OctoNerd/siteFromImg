@@ -245,7 +245,8 @@ nav ul {
 
 .work-wrap {
   display: flex;
-  flex-direction: horizontal; }
+  flex-direction: horizontal;
+  margin-top: 30px; }
 
 .work-example {
   height: 250px;
@@ -295,7 +296,7 @@ nav ul {
   .contact-form-area .btn-submit {
     background: none;
     border: 2px solid white;
-    border-radius: 5px;
+    border-radius: 3px;
     color: white;
     cursor: pointer;
     font-size: 1.3em;

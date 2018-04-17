@@ -306,6 +306,7 @@ nav ul {
 .work-wrap {
     display: flex;
     flex-direction: horizontal;
+    margin-top: 30px;
 }
 
 .work-example {
@@ -384,7 +385,7 @@ nav ul {
     .btn-submit {
         background: none;
         border: 2px solid white;
-        border-radius: 5px;
+        border-radius: 3px;
         color: white;
         cursor: pointer;
         font-size: 1.3em;
