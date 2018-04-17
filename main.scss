@@ -45,6 +45,14 @@ body {
     border-color: $primary-color;
 }
 
+.heading {
+    color: $gray;
+    font-size: 7em;
+    text-transform: uppercase;
+    margin:0 0 25px 0;
+    line-height: 1em;
+}
+
 .blurb {
     font-family: $secondary-font-stack;
     font-size: 1.8em;
@@ -53,28 +61,52 @@ body {
 }
 
 /*~~~ Header ~~~*/
+header {
+    position: fixed;
+    z-index: 10;
+}
 nav {
     background-color: white;
-    height: 35px;
+    height: 75px;
     width: 100%;
     position: fixed;
     top: 0;
+    display: flex;
+    align-items: center;
 }
 nav ul {
     margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    float: right;
 }
+
 .nav-item {
+    text-align: center;
     display: inline-block;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    i {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
 }
 
 .nav-item a {
     text-decoration: none;
     font-size: 1.6em;
+    color: black;
 }
 .nav-item a:hover {
     color: $primary-color;
 }
+
+
+
 
 
 /*~~~ Hero ~~~*/
@@ -109,6 +141,7 @@ nav ul {
     font-family: $font-stack;
     font-size: 7em;
     text-transform: uppercase;
+    color: white;
 }
 
 .btn-continue {
@@ -142,14 +175,6 @@ nav ul {
     padding: 50px 0;
 }
 
-.heading {
-    color: $gray;
-    font-size: 7em;
-    text-transform: uppercase;
-    margin:0 0 25px 0;
-    line-height: 1em;
-}
-
 .card-wrap {
     display: flex;
     justify-content: space-around;
@@ -168,6 +193,12 @@ nav ul {
     border: 2px solid $gray;
     border-radius: 50%;
     margin: 0 auto;
+
+    i {
+        font-size: 4em;
+        line-height: 105px;
+        vertical-align: middle;
+    }
 
     &:hover {
         border-color: $primary-color;
@@ -271,6 +302,12 @@ nav ul {
     float: left;
     margin-right: 20px;
     position: relative;
+    text-align: center;
+
+    i {
+        font-size: 2.5em;
+        margin-top: 40px;
+    }
 
     &:before {
         content: '';

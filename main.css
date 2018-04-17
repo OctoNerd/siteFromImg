@@ -29,6 +29,13 @@ body {
   background-color: #00d792;
   border-color: #00d792; }
 
+.heading {
+  color: #e6e6e6;
+  font-size: 7em;
+  text-transform: uppercase;
+  margin: 0 0 25px 0;
+  line-height: 1em; }
+
 .blurb {
   font-family: serif;
   font-size: 1.8em;
@@ -36,23 +43,41 @@ body {
   margin: 0; }
 
 /*~~~ Header ~~~*/
+header {
+  position: fixed;
+  z-index: 10; }
+
 nav {
   background-color: white;
-  height: 35px;
+  height: 75px;
   width: 100%;
   position: fixed;
-  top: 0; }
+  top: 0;
+  display: flex;
+  align-items: center; }
 
 nav ul {
-  margin: 0; }
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+  float: right; }
 
 .nav-item {
+  text-align: center;
   display: inline-block;
-  list-style: none; }
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .nav-item i {
+    font-size: 1.5em;
+    margin-bottom: 5px; }
 
 .nav-item a {
   text-decoration: none;
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  color: black; }
 
 .nav-item a:hover {
   color: #00d792; }
@@ -85,7 +110,8 @@ nav ul {
 .hero-title {
   font-family: sans-serif;
   font-size: 7em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: white; }
 
 .btn-continue {
   margin-left: 0; }
@@ -111,13 +137,6 @@ nav ul {
   text-align: center;
   padding: 50px 0; }
 
-.heading {
-  color: #e6e6e6;
-  font-size: 7em;
-  text-transform: uppercase;
-  margin: 0 0 25px 0;
-  line-height: 1em; }
-
 .card-wrap {
   display: flex;
   justify-content: space-around;
@@ -134,6 +153,10 @@ nav ul {
   border: 2px solid #e6e6e6;
   border-radius: 50%;
   margin: 0 auto; }
+  .card-circle i {
+    font-size: 4em;
+    line-height: 105px;
+    vertical-align: middle; }
   .card-circle:hover {
     border-color: #00d792;
     box-shadow: 0 0 20px -5px #00d792;
@@ -218,7 +241,11 @@ nav ul {
   border-radius: 50%;
   float: left;
   margin-right: 20px;
-  position: relative; }
+  position: relative;
+  text-align: center; }
+  .tweet-bubble i {
+    font-size: 2.5em;
+    margin-top: 40px; }
   .tweet-bubble:before {
     content: '';
     position: absolute;
