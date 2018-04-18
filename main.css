@@ -198,6 +198,9 @@ nav ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
+  .social-icons i:hover {
+    color: #00d792;
+    cursor: pointer; }
 
 .team-info {
   background-color: #333333;

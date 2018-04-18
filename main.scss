@@ -257,6 +257,11 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    i:hover {
+        color: $primary-color;
+        cursor: pointer;
+    }
 }
 
 .team-info {
