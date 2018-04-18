@@ -95,7 +95,7 @@ nav ul {
 
 .hero::before {
   content: '';
-  background: linear-gradient(45deg, rgba(21, 170, 221, 0.65) 0%, rgba(0, 255, 128, 0.65) 100%), url("mountain.jpeg");
+  background: linear-gradient(45deg, rgba(21, 170, 221, 0.65) 0%, rgba(0, 255, 128, 0.65) 100%), url("../images/mountain.jpeg");
   background-size: cover;
   display: block;
   height: 100vh;
@@ -293,7 +293,7 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("mountain.jpeg");
+  background: url("../images/mountain.jpeg");
   background-size: cover; }
   .work-example:hover {
     filter: grayscale(1); }
